@@ -58,3 +58,14 @@ then
 else
     echo "Invalid Phone number"
 fi
+
+#UC 5
+----------------------------
+echo "Enter the password"
+read password
+if[[ $password =~ "^[a-zA-Z0-9]{8,}$" ]]
+then
+echo "Valid"
+else
+echo "Invalid"
+fi

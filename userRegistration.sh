@@ -47,3 +47,14 @@ do
    fi
 done
 
+#UC 4
+----------------------------
+echo "Enter the phone number"
+read phoneno
+
+if [[ $phoneno =~ "^[[:digit:]]{2}[[:space:]][[:digit:]]{10}$" ]]
+then
+    echo "valid Phone Number"
+else
+    echo "Invalid Phone number"
+fi

@@ -80,3 +80,14 @@ echo "valid"
 else
 echo "Invalid"
 fi
+
+#UC 7
+----------------------------
+echo "Enter the password"
+read passwod3
+if[[ $passwod3 =~ "^((?=.*[A-Z])(?=.8[0-9])([a-zA-Z]){8,})$" ]]
+then
+echo "valid"
+else
+echo "Invalid"
+fi

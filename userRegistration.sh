@@ -15,3 +15,18 @@ break
 fi
 done
 
+#UC 2
+----------------------------
+echo "Enter the last name"
+while read -r lname;
+do
+if (( ${#lname} > 3 ))
+then
+[[ "${lname:0:1}" =~ [[:upper:]] ]] && echo "started with upper: $lname" || echo "$lname not valid ";
+break
+else
+echo "Invalid"
+break
+fi
+done
+echo "$name $lname"

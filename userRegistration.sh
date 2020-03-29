@@ -85,7 +85,18 @@ fi
 ----------------------------
 echo "Enter the password"
 read passwod3
-if[[ $passwod3 =~ "^((?=.*[A-Z])(?=.8[0-9])([a-zA-Z]){8,})$" ]]
+if[[ $passwod3 =~ "^((?=.*[A-Z])(?=.*[0-9])([a-zA-Z]){8,})$" ]]
+then
+echo "valid"
+else
+echo "Invalid"
+fi
+
+#UC 8
+----------------------------
+echo "Enter the password"
+read passwod4
+if[[ $passwod4 =~ "^((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?|.*[<>])((.,/;:!@#$%^&*(){}]*){8,})$" ]]
 then
 echo "valid"
 else

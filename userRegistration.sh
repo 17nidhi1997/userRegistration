@@ -30,3 +30,20 @@ break
 fi
 done
 echo "$name $lname"
+
+#UC 3
+----------------------------
+while true
+do
+   read -p "enter admin emial:" email
+   echo
+   if [[ "$email" =~ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$ ]]
+   then
+       echo "email adres $email is valid."
+       break
+   else
+        echo "email adress $email is invalid."
+        break
+   fi
+done
+
